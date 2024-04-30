@@ -2,6 +2,8 @@
 
 ### Author: Abhijit Baldawa
 
+### Description
+
 A fullstack Node.js/React.js/Typescript/monorepo application to search and save favorite movies. Movies are pulled from OMDB public API's with an search as you type infinite scroll list.
 
 ### Tech Stack
