@@ -1,0 +1,12 @@
+{
+  "name": "@favorite-movies-tracker/common",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "18.17.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "main": "./src/index.ts"
+}

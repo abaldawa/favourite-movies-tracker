@@ -1,0 +1,45 @@
+{
+  "name": "favorite-movies-tracker",
+  "author": "Abhijit Baldawa",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "18.17.1"
+  },
+  "workspaces": [
+    "workspaces/*"
+  ],
+  "scripts": {
+    "@client": "yarn workspace @favorite-movies-tracker/client",
+    "@common": "yarn workspace @favorite-movies-tracker/common",
+    "@server": "yarn workspace @favorite-movies-tracker/server",
+    "build": "yarn parallel 'yarn:build:*'",
+    "build:client": "yarn @client build",
+    "build:server": "yarn @server build",
+    "dev": "yarn parallel 'yarn:dev:*'",
+    "dev:client": "yarn @client dev",
+    "dev:server": "yarn @server dev",
+    "verify": "yarn parallel 'yarn:verify:*'",
+    "verify:prettier": "prettier --check --loglevel warn .",
+    "verify:typescript": "yarn workspaces run tsc",
+    "test": "yarn workspaces run test",
+    "fix": "yarn parallel 'yarn:fix:*'",
+    "fix:prettier": "yarn verify:prettier --write",
+    "parallel": "concurrently -c 'auto' -t 'HH:mm:ss.SSS' -p '[{time}] [{name}]'"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.4",
+    "@types/node": "^20.5.7",
+    "concurrently": "^8.2.1",
+    "esbuild": "0.19.2",
+    "jest": "29.6.4",
+    "prettier": "3.0.2",
+    "ts-jest": "29.1.1",
+    "ts-node": "10.9.1",
+    "typescript": "5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "zod": "^3.22.2"
+  }
+}

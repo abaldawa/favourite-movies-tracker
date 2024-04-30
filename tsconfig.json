@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "module": "CommonJS",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "paths": {
+      "@favorite-movies-tracker/*": ["workspaces/*"]
+    },
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "alwaysStrict": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*", "dist"]
+}

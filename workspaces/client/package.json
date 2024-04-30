@@ -1,0 +1,28 @@
+{
+  "name": "@favorite-movies-tracker/client",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "18.17.1"
+  },
+  "scripts": {
+    "build": "ts-node ./scripts/build.ts",
+    "dev": "ts-node ./scripts/build.ts dev",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.7",
+    "@favorite-movies-tracker/common": "*",
+    "immer": "^10.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-json-tree": "^0.18.0",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7"
+  }
+}
